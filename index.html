@@ -17,7 +17,7 @@
 
     <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 
     <!-- Plugin CSS -->
@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="lib/device-mockups/device-mockups.min.css">
 
     <!-- Theme CSS -->
-    <link href="css/new-age.min.css" rel="stylesheet">
+    <link href="css/new-age.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -36,6 +36,11 @@
     <![endif]-->
 
     <link rel="shortcut icon" href="img/biciflow2.png">
+
+    <script type="text/javascript" src="http://downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us16.list-manage.com","uuid":"cb1ade43f0a2469f58377ad87","lid":"aedc8da1fe"}) })</script>
+    
+    <!-- <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script> -->
+  
 
 </head>
 
@@ -55,10 +60,13 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a class="page-scroll" href="#download">Baixar</a>
+                        <a class="page-scroll" href="#description">Motivação</a>
                     </li>
+                    <!-- <li>
+                        <a class="page-scroll" href="#download">Baixar</a>
+                    </li> -->
                     <li>
-                        <a class="page-scroll" href="#features">Funções</a>
+                        <a class="page-scroll" href="#features">Funcionalidades</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contato</a>
@@ -77,7 +85,7 @@
                     <div class="header-content">
                         <div class="header-content-inner">
                             <h1>O Biciflow é um aplicativo que ajuda ciclistas a encontrar companhia para seus percursos do dia a dia.</h1>
-                            <a href="#download" class="btn btn-outline btn-xl page-scroll">Em breve!</a>
+                            <a id="open-popup" class="btn btn-outline btn-xl">Inscrever-se na lista de espera</a>
                         </div>
                     </div>
                 </div>
@@ -100,16 +108,18 @@
         </div>
     </header>
 
-    <section id="download" class="download bg-primary text-center">
+    <section id="description" class=" bg-primary text-center">
         <div class="container">
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
-                    <h2 class="section-heading">Descubra e use!</h2>
-                    <p>Nosso aplicativo estará disponível para Android em breve! Aguarde!</p>
-                    <div class="badges">
-                        <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
+                    <h2 class="section-heading">Motivação</h2>
+                    <p>A ausência de estrutura cicloviária e/ou a falta de educação, respeito e prudência por parte dos motoristas no trânsito ameaçam a utilização da bicicleta em muitas cidades brasileiras. </p><p>
+                        O Biciflow, por sua vez, é um aplicativo que conecta ciclistas e potenciais ciclistas que pretendam percorrer roteiros similares de bicicleta, fazendo com que pedalem em grupo, o que lhes traz maior proteção. </p><p>
+                        Portanto, diante do contexto de grande violência que marca o trânsito brasileiro, o aplicativo visa a estimular aqueles que ainda não utilizam a bike como modal por medo -além de ajudar quem já se utiliza desse meio de transporte- lhes proporcionando segurança e empoderamento, incentivando, assim, a cultura da bicicleta na mobilidade urbana.</p>
+                    <!-- <div class="badges"> -->
+                        <!-- <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a> -->
                         <!--a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a-->
-                    </div>
+                    <!-- </div> -->
                 </div>
             </div>
         </div>
@@ -120,7 +130,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <div class="section-heading">
-                        <h2>Crie suas rotas e viva mais seguro no trânsito</h2>
+                        <h2>Crie suas rotas e pedale mais seguro no trânsito</h2>
                         <p class="text-muted">Veja o que você pode fazer com este aplicativo!</p>
                         <hr>
                     </div>
@@ -146,7 +156,7 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="feature-item">
-                                    <i class="icon-map text-primary"></i>
+                                    <i class="icon-compass text-primary"></i>
                                     <h3>Rotas compartilhadas</h3>
                                     <p class="text-muted">Encontre pessoas que façam rotas similares e sinta-se mais seguro pedalando no trânsito.</p>
                                 </div>
@@ -162,16 +172,24 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="feature-item">
-                                    <i class="icon-present text-primary"></i>
+                                    <i class="icon-settings text-primary"></i>
                                     <h3>Oficinas</h3>
-                                    <p class="text-muted">Descubra oficinas de bicicletas perto de você.</p>
+                                    <p class="text-muted">Descubra oficinas de bicicletas perto de você. <br/>
+                                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSckJXpROuUH8xF4HLkex6xejqF4s8cQFMJ11NtlaR1U12enzw/viewform">
+                                            <i class="icon-arrow-right" style="font-size: 16px; margin-right: 6px;"></i>
+                                            Cadastre oficinas</a> 
+                                        </p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="feature-item">
-                                    <i class="icon-key text-primary"></i>
-                                    <h3>Mecânicos</h3>
-                                    <p class="text-muted">Solicite reparos a mecanicos parceiros e eles irão até você, pra deixar sua bicicleta 100%.</p>
+                                    <i class="icon-support text-primary"></i>
+                                    <h3>Mecânicos (em breve)</h3>
+                                    <p class="text-muted">Solicite reparos a mecanicos parceiros e eles irão até você, pra deixar sua bicicleta 100%.
+                                        <br/> <a href="https://goo.gl/forms/3vCktLwKyZcPbN003">
+                                            <i class="icon-arrow-right" style="font-size: 16px; padding-right: 4px;"></i>
+                                            Seja um mecânico parceiro</a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
@@ -184,11 +202,12 @@
     <section class="cta">
         <div class="cta-content">
             <div class="container">
-                <h2>Não arrisque.<br>Vá seguro.</h2>
-                <a href="#contact" class="btn btn-outline btn-xl page-scroll">Conheça-nos mais!</a>
+                <h2>Se organizar direitinho todo mundo pedala</h2>
+                <a href="https://www.facebook.com/sharer/sharer.php?u=https://biciflow.com" class="btn btn-outline btn-xl page-scroll">
+                        <i class="icon-share-alt" style="font-size: 16px; padding-right: 4px; color: #fff;"></i>Compartilhe nosso projeto</a>
             </div>
         </div>
-        <div class="overlay"></div>
+        <!-- <div class="overlay"></div> -->
     </section>
 
     <section id="contact" class="contact bg-primary">
@@ -201,8 +220,14 @@
                 <li class="social-facebook">
                     <a href="https://www.facebook.com/biciflow"><i class="fa fa-facebook"></i></a>
                 </li>
-                <li class="social-google">
-                    <a href="mailTo:biciflow@googlegroups.com"><i class="fa fa-google"></i></a>
+                <li class="social-email">
+                    <a href="mailTo:biciflow@googlegroups.com"><i class="fa fa-envelope-o"></i></a>
+                </li>
+                <li class="social-github">
+                    <a href="https://github.com/biciflow"><i class="fa fa-github"></i></a>
+                </li>
+                <li class="social-medium">
+                    <a href="https://medium.com/biciflow"><i class="fa fa-medium"></i></a>
                 </li>
             </ul>
         </div>
@@ -210,8 +235,8 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2017 Biciflow. Todos os Direitos Reservados.</p>
-            <!--ul class="list-inline">
+            <p>2017 Biciflow</p>
+            <!-- <ul class="list-inline">
                 <li>
                     <a href="#">Privacidade</a>
                 </li>
@@ -221,7 +246,7 @@
                 <li>
                     <a href="#">FAQ</a>
                 </li>
-            </ul>-->
+            </ul> -->
         </div>
     </footer>
 
@@ -241,6 +266,15 @@
         $('#something').click(function() {
             location.reload();
         });
+    </script>
+  
+  <script>
+    function showMailingPopUp() {
+        require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"cb1ade43f0a2469f58377ad87","lid":"aedc8da1fe"}) })
+        document.cookie = "MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+    };
+    
+    document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
     </script>
 
 </body>
