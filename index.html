@@ -37,10 +37,8 @@
 
     <link rel="shortcut icon" href="img/biciflow2.png">
 
-    <script type="text/javascript" src="http://downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us16.list-manage.com","uuid":"cb1ade43f0a2469f58377ad87","lid":"aedc8da1fe"}) })</script>
-    
-    <!-- <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script> -->
-  
+    <!-- <script type="text/javascript" src="http://downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us16.list-manage.com","uuid":"cb1ade43f0a2469f58377ad87","lid":"aedc8da1fe"}) })</script> -->
+    <!-- <script type="text/javascript" src="http://s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script> -->
 
 </head>
 
@@ -95,7 +93,7 @@
                             <div class="device">
                                 <div class="screen">
                                     <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/demo-screen-1.png" class="img-responsive" alt="">
+                                    <img src="img/demo-screen-1.jpg" class="img-responsive" alt="">
                                 </div>
                                 <div class="button">
                                     <!-- You can hook the "home button" to some JavaScript events or just remove it -->
@@ -113,7 +111,7 @@
             <div class="row">
                 <div class="col-md-8 col-md-offset-2">
                     <h2 class="section-heading">Motivação</h2>
-                    <p>A ausência de estrutura cicloviária e/ou a falta de educação, respeito e prudência por parte dos motoristas no trânsito ameaçam a utilização da bicicleta em muitas cidades brasileiras. </p><p>
+                    <p>A ausência de estrutura cicloviária e/ou a falta de educação, respeito as leis e prudência por parte dos motoristas no trânsito ameaçam a utilização da bicicleta em muitas cidades brasileiras. </p><p>
                         O Biciflow, por sua vez, é um aplicativo que conecta ciclistas e potenciais ciclistas que pretendam percorrer roteiros similares de bicicleta, fazendo com que pedalem em grupo, o que lhes traz maior proteção. </p><p>
                         Portanto, diante do contexto de grande violência que marca o trânsito brasileiro, o aplicativo visa a estimular aqueles que ainda não utilizam a bike como modal por medo - além de ajudar quem já se utiliza desse meio de transporte - lhes proporcionando segurança e empoderamento, incentivando, assim, a cultura da bicicleta na mobilidade urbana.</p>
                     <!-- <div class="badges"> -->
@@ -261,20 +259,20 @@
 
     <!-- Theme JavaScript -->
     <script src="js/new-age.min.js"></script>
-
-    <script type="text/javascript">
-        $('#something').click(function() {
-            location.reload();
-        });
-    </script>
   
-  <script>
+    <script type="text/javascript" src="http://downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false">
+    </script>
+    <!-- <script type="text/javascript">require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us16.list-manage.com","uuid":"cb1ade43f0a2469f58377ad87","lid":"aedc8da1fe"}) })</script> -->
+
+    <script>
     function showMailingPopUp() {
-        require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us11.list-manage.com","uuid":"cb1ade43f0a2469f58377ad87","lid":"aedc8da1fe"}) })
-        document.cookie = "MCPopupClosed=; expires=Thu, 01 Jan 1970 00:00:00 UTC";
+        require(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us16.list-manage.com","uuid":"cb1ade43f0a2469f58377ad87","lid":"aedc8da1fe"}) })
+        document.cookie = 'MCPopupClosed=;path=/;expires=Thu, 01 Jan 1970 00:00:00 UTC;';
     };
-    
-    document.getElementById("open-popup").onclick = function() {showMailingPopUp()};
+
+    document.getElementById("open-popup").onclick = function() {
+        showMailingPopUp()
+    };
     </script>
 
 </body>
