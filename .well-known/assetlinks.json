@@ -1,0 +1,9 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.biciflow.biciflow",
+    "sha256_cert_fingerprints":
+    ["3E:2C:1E:EA:13:2A:BC:29:7B:62:05:9F:A9:94:83:C2:46:A8:31:BE:59:30:C8:95:82:BC:D2:16:17:2E:27:DE"]
+  }
+}]
