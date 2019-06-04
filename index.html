@@ -161,7 +161,10 @@
 			    <div class="footer-col col-6 col-lg-3">
 				    <h4 class="col-heading">Recursos</h4>
 				    <ul class="list-unstyled">
-					    <li><a href="https://medium.com/biciflow">Blog</a></li>
+						<li><a href="https://medium.com/biciflow">Blog</a></li>
+						<li><a href="#" data-toggle="modal" data-target="#modalTesters">Testadores</a></li>
+						<li><a href="https://www.dropbox.com/sh/1hpylx7w0ag5r1f/AADDvVJ48WHkM7Zzm3AjngsTa?dl=0">Media Kit</a></li>
+						
 				    </ul>
 			    </div> <!--//footer-col -->
 			    <div class="footer-col col-6 col-lg-3">
@@ -201,9 +204,9 @@
 	    <div class="download-area py-4">
 		    <div class="container text-center">
 			    <h3 class="mb-3">Instale o Biciflow</h3>
-		    <div class="section-intro mb-4 single-col-max-width mx-auto">O app Android está disponível na Play Store, o app iOS está disponível em fase de testes pelo TestFlight da Apple.</div>
+		    <div class="section-intro mb-4 single-col-max-width mx-auto">O app Android está disponível em testes na Play Store, o app iOS está disponível em testes pelo TestFlight da Apple.</div>
 			    <ul class="app-stores list-unstyled list-inline mx-auto  d-inline-block">
-				    <li class="list-inline-item mr-3"><a href="https://testflight.apple.com/join/bclUyAQt"><img class="ios" src="assets/images/appstore-apple.svg" alt="app-store"></a></li>
+				    <li class="list-inline-item mr-3"><a href="https://testflight.apple.com/join/bclUyAQt" data-toggle="tooltip" data-placement="top" title="Tooltip na parte superior"><img class="ios" src="assets/images/appstore-apple.svg" alt="app-store"></a></li>
 				    <li class="list-inline-item"><a href="https://play.google.com/store/apps/details?id=com.biciflow.biciflow"><img class="android" src="assets/images/appstore-android.svg" alt="google play"></a></li>
 			    </ul>
 		    </div><!--//container-->
@@ -266,6 +269,28 @@
 			</div>
 		</div>
 	</div> <!-- // Contact -->
+
+	<!-- Testers Modal -->
+	<div class="modal fade" id="modalTesters" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Testadores</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				</div>
+				<div class="modal-body">
+					<p>Caso você queira interagir com outras pessoas que estão testando o aplicativo e queira dar feedbacks, entre no nosso grupo do WhatsApp.  
+					</p>
+					<p><a href="https://chat.whatsapp.com/Fdu1v4xJmXOICrbAK73YGi">Grupo do Whatsapp</a></p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+				</div>
+			</div>
+		</div>
+	</div> <!-- // Testers -->
        
     <!-- Javascript -->          
     <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
