@@ -1,0 +1,11 @@
+{
+    "applinks": {
+        "apps": [ ],
+        "details": [
+            {
+                "appID": "7J3Y96J464.app.biciflow",
+                "paths": [ "/*"]
+            }
+        ]
+    }
+}

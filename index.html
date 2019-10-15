@@ -1,241 +1,322 @@
 <!DOCTYPE html>
-<html lang="pt">
-
+<html lang="en"> 
 <head>
-
+    <title>Biciflow - Encontre companhia para suas pedaladas</title>
+    
+    <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="O Biciflow é um aplicativo que conecta ciclistas - e potenciais ciclistas - que pretendam percorrer roteiros similares de bicicleta, fazendo com que pedalem em grupo. A fim de estimular aqueles que ainda não utilizam a bicicleta como modal.">
-    <meta name="author" content="Luís Delgado">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aplicativo que une ciclistas para que se sintam mais seguros">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+	<link rel="shortcut icon" href="favicon.ico"> 
+	
+	<!-- Facebook -->
+	<meta property="og:image" content="assets/images/facebook_thumbnail.png" />
+	<meta property="og:description" content="Aplicativo que une ciclistas para que se sintam mais seguros" />
+	<meta property="og:title" content="Biciflow - Encontre companhia para suas pedaladas" />
+	<meta property="og:type" content="website" />
+	<meta property="fb:app_id" content="286385921798485" />
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-53118006-4"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
 
-    <title>Biciflow</title>
+	gtag('config', 'UA-53118006-4');
+	</script>
+  
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro:400,500,700|Nunito:400,600,700" rel="stylesheet">
+    
+    <!-- FontAwesome JS-->
+	<script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" 
+	integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/jquery-flipster/dist/jquery.flipster.min.css">
+    
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme.css">
 
-    <!-- Bootstrap Core CSS -->
-    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head> 
 
-    <!-- Custom Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+<body>
 
-    <!-- Plugin CSS -->
-    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="lib/simple-line-icons/css/simple-line-icons.css">
-    <link rel="stylesheet" href="lib/device-mockups/device-mockups.min.css">
+    
+    <header class="header">
+	    
+        <div class="branding">
+            
+            <div class="container position-relative">
 
-    <!-- Theme CSS -->
-    <link href="css/new-age.min.css" rel="stylesheet">
+				<nav class="navbar navbar-expand-lg" >
+                    <h1 class="site-logo"><a class="navbar-brand" href="https://biciflow.app"><img class="logo-icon" width="200" src="assets/images/logo-icon.png" alt="logo"></h1>
+                    </nav>
+				
+				<!-- // Free Version ONLY -->
+				<ul class="social-list list-inline mb-0 position-absolute">
+					<li class="list-inline-item"><a class="text-white" href="https://www.instagram.com/biciflowapp/"><i class="fab fa-instagram fa-fw"></i></a></li>
+					<li class="list-inline-item"><a class="text-white" href="https://www.linkedin.com/company/33212451/"><i class="fab fa-linkedin fa-fw"></i></a></li>
+	                <li class="list-inline-item"><a class="text-white" href="https://facebook.com/biciflow"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+	            </ul><!--//social-list-->
+	            
+            </div><!--//container-->
+            
+        </div><!--//branding-->
+        
+        
+    </header><!--//header-->
+    
+    
+    <section class="hero-section">
+	    <div class="container">
+		    <div class="row figure-holder">
+			    <div class="col-12 col-md-6 pt-3 pt-md-4">
+				    <h2 class="site-headline font-weight-bold mt-lg-5 pt-lg-5">Ajudamos ciclistas a encontrar companhia para seus percursos</h2>
+				    <div class="site-tagline mb-3"></div>
+				    <div class="cta-btns">
+					    <!-- <div class="mb-4"><a class="btn btn-primary font-weight-bold theme-btn" href="#">Seja um embaixador</a></div> -->
+					    <ul class="app-stores list-unstyled list-inline mx-auto mx-md-0 d-inline-block">
+						    <li class="list-inline-item mr-3"><a href="https://apps.apple.com/us/app/biciflow/id1445043607?l=pt&ls=1"><img class="ios" src="assets/images/appstore-apple.svg" alt="app-store"></a></li>
+						    <li class="list-inline-item"><a href="https://play.google.com/store/apps/details?id=com.biciflow.biciflow"><img class="android" src="assets/images/appstore-android.svg" alt="google play"></a></li>
+					    </ul>
+				    </div>
+			    </div>
+		    </div><!--//row-->
+	    </div>
+	</section><!--//hero-section-->
+	    
+    <section class="logos-section theme-bg-primary py-5 text-center">
+	    <div class="container">
+		    <h3 class="mb-5">Na mídia</h3>
+		    <div class="logos-row row mx-auto"> 
+                <div class="item col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">
+		            <div class="item-inner">
+		                <a href="https://g1.globo.com/pe/pernambuco/noticia/2018/10/11/aplicativo-criado-por-estudantes-conecta-ciclistas-para-pedaladas-conjuntas-no-grande-recife.ghtml"> <img src="assets/images/logos/logo-g1.png" alt="logo" class="logo-media"></a>
+		            </div><!--//item-inner-->
+	            </div><!--//item-->
+	            <div class="item col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">
+		            <div class="item-inner">
+		                <a href="https://jconline.ne10.uol.com.br/canal/cidades/jc-transito/noticia/2018/08/29/conheca-o-aplicativo-que-conecta-ciclistas-que-fazem-o-mesmo-caminho-352765.php"> <img src="assets/images/logos/logo-jc.png" alt="logo" class="logo-media"></a>
+		            </div><!--//item-inner-->
+	            </div><!--//item-->
+                <div class="item col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">
+		            <div class="item-inner">
+		                <a href="https://www.diariodepernambuco.com.br/app/noticia/vida-urbana/2019/06/17/interna_vidaurbana,791693/biciflow-app-para-ciclistas-lanca-versao-mais-estavel-para-recife.shtml"><img src="assets/images/logos/logo-diario.png" alt="logo"></a>
+		            </div><!--//item-inner-->
+	            </div><!--//item-->
+	            <div class="item col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">
+		            <div class="item-inner">
+		                <a href="https://www.folhape.com.br/noticias/noticias/cotidiano/2018/09/11/NWS,80798,70,449,NOTICIAS,2190-CICLISTAS-GANHAM-APLICATIVO-PARA-COMPARTILHAREM-ROTAS-SEGURAS.aspx"> <img src="assets/images/logos/logo-folhape.png" alt="logo" class="logo-media"></a>
+		            </div><!--//item-inner-->
+	            </div><!--//item-->
+	            <div class="item col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">
+		            <div class="item-inner">
+		                <img src="assets/images/logos/logo-tvclube.png" alt="logo" class="logo-media">
+		            </div><!--//item-inner-->
+	            </div><!--//item-->
+	            <div class="item col-6 col-md-4 col-lg-2 mb-3 mb-lg-0">
+		            <div class="item-inner">
+                        <a href="https://www.mobilize.org.br/noticias/11209/ciclistas-do-recife-ganham-aplicativo-colaborativo-de-rotas-seguras.html">
+		                <img src="assets/images/logos/logo-mobilize.png" alt="logo" class="logo-media"></a>
+		            </div><!--//item-inner-->
+	            </div><!--//item-->
+	            
+	        </div>
+			    
+	    </div><!--//container-->
+    </section><!--//logo-section-->
+    
+    <section class="benefits-section py-5">
+	    
+	    <div class="container py-lg-5">
+		    <h3 class="mb-5 text-center font-weight-bold">Como funciona o Biciflow?</h3>
+		    <div class="row">
+		        <div class="item col-12 col-lg-4">
+				    <div class="item-inner text-center p-3 p-lg-5">
+					    <img class="mb-3" src="assets/images/icon-routes.png" alt="" height="150"/>
+					    <h5>Descubra trajetos recomendados</h5>
+					    <div>Inscreva-se em rotas existentes ou crie as suas próprias para você e seus amigos.</div>
+				    </div><!--//item-inner-->
+			    </div><!--//item-->
+			    <div class="item col-12 col-lg-4">
+				    <div class="item-inner text-center p-3 p-lg-5">
+					    <img class="mb-3" src="assets/images/icon-interaction.png" alt="" height="150" />
+					    <h5>Encontre companhia</h5>
+					    <div>Visualize os agendamentos da rota e veja quem será sua companhia no pedal.</div>
+				    </div><!--//item-inner-->
+			    </div><!--//item-->
+			    <div class="item col-12 col-lg-4">
+				    <div class="item-inner text-center p-3 p-lg-5">
+					    <img class="mb-3" src="assets/images/icon-location.png" alt="" height="150" />
+					    <h5>Com a navegação em tempo real, você não se perde do grupo.</h5>
+					    <div>Use nosso modo navegação e visualize os inscritos.</div>
+				    </div><!--//item-inner-->
+			    </div><!--//item-->
+		    </div><!--//row-->
+		    <div class="pt-3 text-center">
+			    <a class="btn btn-primary theme-btn theme-btn-ghost font-weight-bold" href="whatsapp://send?text=O Biciflow é um aplicativo que ajuda você a não pedalar sozinho no meio do trânsito. Instale o app em https://biciflow.app 🚲">Encaminhe pelo WhatsApp</a>
+		    </div>
+	    </div>
+	    
+    </section><!--//benefits-section-->
+      
+    <footer class="footer theme-bg-primary">
+	    <div class="container py-5 mb-3">
+		    <div class="row">
+			    <div class="footer-col col-6 col-lg-3">
+				    <h4 class="col-heading">Sobre</h4>
+				    <ul class="list-unstyled">
+					    <li><a href="#" data-toggle="modal" data-target="#modalContact">Contato</a></li>
+					    
+				    </ul>
+			    </div> <!--//footer-col -->
+			    <div class="footer-col col-6 col-lg-3">
+				    <h4 class="col-heading">Recursos</h4>
+				    <ul class="list-unstyled">
+						<li><a href="https://medium.com/biciflow">Blog</a></li>
+						<li><a href="#" data-toggle="modal" data-target="#modalTesters">Testadores</a></li>
+						<li><a href="https://www.dropbox.com/sh/1hpylx7w0ag5r1f/AADDvVJ48WHkM7Zzm3AjngsTa?dl=0">Media Kit</a></li>
+						
+				    </ul>
+			    </div> <!--//footer-col -->
+			    <div class="footer-col col-6 col-lg-3">
+				    <h4 class="col-heading">Legal</h4>
+				    <ul class="list-unstyled">
+					    <li><a href="#" data-toggle="modal" data-target="#modalTerms">Termos de uso e privacidade</a></li>
+				    </ul>
+			    </div><!--//footer-col-->
+			    <div class="footer-col col-6 col-lg-3">
+				    <h4 class="col-heading">Redes</h4>
+				    <ul class="social-list list-unstyled mb-0">
+						<li class="list-inline-item"><a class="text-dark" href="https://www.linkedin.com/company/33212451/"><i class="fab fa-linkedin fa-fw"></i></a></li>
+						<li class="list-inline-item"><a href="https://www.instagram.com/biciflowapp/"><i class="fab fa-instagram fa-fw"></i></a></li>
+						<li class="list-inline-item"><a href="https://chat.whatsapp.com/Fdu1v4xJmXOICrbAK73YGi"><i class="fab fa-whatsapp fa-fw"></i></a></li>
+						<li class="list-inline-item"><a href="https://github.com/biciflow/"><i class="fab fa-github fa-fw"></i></a></li>
+		                <li class="list-inline-item"><a href="https://facebook.com/biciflow"><i class="fab fa-facebook-f fa-fw"></i></a></li>
+		                
+		            </ul><!--//social-list-->
+		            
+		            <div class="mb-2">
+			            Biciflow App<br>
+			            Av. Jorn. Aníbal Fernandes, s/n <br>
+			            Cidade Universitária, Recife - PE, 50740-560
+		            </div>
+		            <div>
+			            <a href="mailto:biciflowapp@gmail.com">biciflowapp@gmail.com</a>
+			        </div>
+		            
+			    </div><!--//footer-col-->
+		    </div><!--//row-->
+	    </div><!--//container-->
+		
+		<div class="container">
+		    <hr>
+		</div>
+		
+	    <div class="download-area py-4">
+		    <div class="container text-center">
+			    <h3 class="mb-3">Instale o Biciflow</h3>
+		    <div class="section-intro mb-4 single-col-max-width mx-auto">O app Android está disponível em testes na Play Store, o app iOS está na App Store.</div>
+			    <ul class="app-stores list-unstyled list-inline mx-auto  d-inline-block">
+				    <li class="list-inline-item mr-3"><a href="https://apps.apple.com/us/app/biciflow/id1445043607?l=pt&ls=1" data-toggle="tooltip" data-placement="top" title="Tooltip na parte superior"><img class="ios" src="assets/images/appstore-apple.svg" alt="app-store"></a></li>
+				    <li class="list-inline-item"><a href="https://play.google.com/store/apps/details?id=com.biciflow.biciflow"><img class="android" src="assets/images/appstore-android.svg" alt="google play"></a></li>
+			    </ul>
+		    </div><!--//container-->
+	    </div><!--//download-area-->
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
+		
+		<div class="container" style="text-align: center; display:block;">
+		    <img src="assets/images/casa-cidades-logos.png" width="75%">
+		</div>
+		
+		<div class="footer-bottom text-center pb-5">
+	        <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+                <small class="copyright">Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+		</div>
 
-    <link rel="shortcut icon" href="img/biciflow2.png">
-
-</head>
-
-<body id="page-top">
-
-    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Início</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a class="page-scroll" href="#download">Baixar</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#features">Funções</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contato</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container-fluid -->
-    </nav>
-
-    <header>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-7">
-                    <div class="header-content">
-                        <div class="header-content-inner">
-                            <h1>O Biciflow é um aplicativo que ajuda ciclistas a encontrar companhia para seus percursos do dia a dia.</h1>
-                            <a href="#download" class="btn btn-outline btn-xl page-scroll">Em breve ele estará disponível. Tudo grátis!</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-5">
-                    <div class="device-container">
-                        <div class="device-mockup galaxy_s3 white">
-                            <div class="device">
-                                <div class="screen">
-                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/demo-screen-1.jpg" class="img-responsive" alt="">
-                                </div>
-                                <div class="button">
-                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
-    <section id="download" class="download bg-primary text-center">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <h2 class="section-heading">Descubra tudo usando!</h2>
-                    <p>Nosso aplicativo estará disponível para Android em breve! Aguarde!</p>
-                    <div class="badges">
-                        <a class="badge-link" href="#"><img src="img/google-play-badge.svg" alt=""></a>
-                        <!--a class="badge-link" href="#"><img src="img/app-store-badge.svg" alt=""></a-->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="features" class="features">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="section-heading">
-                        <h2>Crie suas rotas e viva mais seguro no trânsito</h2>
-                        <p class="text-muted">Veja o que você pode fazer com este aplicativo!</p>
-                        <hr>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="device-container">
-                        <div class="device-mockup galaxy_s3 white">
-                            <div class="device">
-                                <div class="screen">
-                                    <!-- Demo image for screen mockup, you can put an image here, some HTML, an animation, video, or anything else! -->
-                                    <img src="img/demo-screen-1.jpg" class="img-responsive" alt=""> </div>
-                                <div class="button">
-                                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-8">
-                    <div class="container-fluid">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-map text-primary"></i>
-                                    <h3>Rotas compartilhadas</h3>
-                                    <p class="text-muted">Encontre pessoas que façam rotas similares e sinta-se mais seguro pedalando.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-exclamation text-primary"></i>
-                                    <h3>Alerta</h3>
-                                    <p class="text-muted">Envie um alerta para seus amigos caso esteja precisando de ajuda.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-present text-primary"></i>
-                                    <h3>Oficinas</h3>
-                                    <p class="text-muted">Descubra oficinas de bicicletas perto de você.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="feature-item">
-                                    <i class="icon-key text-primary"></i>
-                                    <h3>Mecânicos</h3>
-                                    <p class="text-muted">Solicite reparos a mecanicos parceiros e eles irão até você, pra deixar sua bicicleta 100%.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="cta">
-        <div class="cta-content">
-            <div class="container">
-                <h2>Não arrisque.<br>Vá seguro.</h2>
-                <a href="#contact" class="btn btn-outline btn-xl page-scroll">Conheça-nos mais!</a>
-            </div>
-        </div>
-        <div class="overlay"></div>
-    </section>
-
-    <section id="contact" class="contact bg-primary">
-        <div class="container">
-            <h2>Nós <i class="fa fa-heart"></i> novos amigos!</h2>
-            <ul class="list-inline list-social">
-                <li class="social-twitter">
-                    <!--a href="#"><i class="fa fa-twitter"></i></a-->
-                </li>
-                <li class="social-facebook">
-                    <a href="https://www.facebook.com/biciflow"><i class="fa fa-facebook"></i></a>
-                </li>
-                <li class="social-google">
-                    <a href="mailTo:biciflow@googlegroups.com"><i class="fa fa-google"></i></a>
-                </li>
-            </ul>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2017 Biciflow. Todos os Direitos Reservados.</p>
-            <!--ul class="list-inline">
-                <li>
-                    <a href="#">Privacidade</a>
-                </li>
-                <li>
-                    <a href="#">Termos</a>
-                </li>
-                <li>
-                    <a href="#">FAQ</a>
-                </li>
-            </ul>-->
-        </div>
     </footer>
 
-    <!-- jQuery -->
-    <script src="lib/jquery/jquery.min.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+	<!-- Terms Modal -->
+	<div class="modal fade" id="modalTerms" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Termos de uso e privacidade</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				</div>
+				<div class="modal-body">
+				<iframe name="interno" width="480" height="400" src="https://docs.google.com/document/u/2/d/e/2PACX-1vREfIu91138zfP4eXksiAlLiKubbicADR6ix_ORWnxt7QXBza6EH7uT2zr0QOnRZSKs_woZKMhV6p95/pub"></iframe>
+				</div>
+				<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+				</div>
+			</div>
+		</div>
+	</div> <!-- // terms -->
 
-    <!-- Plugin JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 
-    <!-- Theme JavaScript -->
-    <script src="js/new-age.min.js"></script>
+	<!-- Contact Modal -->
+	<div class="modal fade" id="modalContact" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Contato</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				</div>
+				<div class="modal-body">
+					<p>Quer fazer uma parceria? tem dúvidas? sugestões?</p>
+					<p>Entre em contato pelo email <b>biciflowapp@gmail.com</b></p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+				</div>
+			</div>
+		</div>
+	</div> <!-- // Contact -->
+
+	<!-- Testers Modal -->
+	<div class="modal fade" id="modalTesters" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Testadores</h5>
+				<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				</div>
+				<div class="modal-body">
+					<p>Caso você queira interagir com outras pessoas que estão testando o aplicativo e queira dar feedbacks, entre no nosso grupo do WhatsApp.  
+					</p>
+					<p><a href="https://chat.whatsapp.com/Fdu1v4xJmXOICrbAK73YGi">Grupo do Whatsapp</a></p>
+					<p><i>Atenção. O aplicativo está em fase de testes. Embora esteja estável, podem ocorrer falhas.</i></p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+				</div>
+			</div>
+		</div>
+	</div> <!-- // Testers -->
+       
+    <!-- Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/popper.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>  
+    
+    <!-- Page Specific JS -->
+    <script type="text/javascript" src="assets/plugins/jquery-flipster/dist/jquery.flipster.min.js"></script> 
+    <script type="text/javascript" src="assets/js/flipster-custom.js"></script> 
+
 
 </body>
+</html> 
 
-</html>
